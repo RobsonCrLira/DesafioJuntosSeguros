@@ -1,11 +1,13 @@
 package com.juntosseguros.gerenciadorapi.entidade;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.UtilityClass;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Column;
 import java.time.LocalDate;
 
 @Entity
@@ -14,6 +16,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Cartao {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -28,5 +31,5 @@ public class Cartao {
     private LocalDate data_inicio;
 
     private LocalDate data_fim;
-
+    
 }

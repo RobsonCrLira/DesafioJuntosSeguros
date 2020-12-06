@@ -12,7 +12,7 @@
 	<artifactId>gerenciadorapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gerenciadorapi</name>
-	<description>Gerenciador de Tarefaz</description>
+	<description>Gerenciador de Tarefa</description>
 
 	<properties>
 		<java.version>11</java.version>
